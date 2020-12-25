@@ -2,9 +2,9 @@ import galleryItems from './gallery-items.js';
 
 export const galleryList = document.querySelector('.js-gallery');
 
-galleryItems.map(imgObject => makeItemLayout(imgObject));
+galleryItems.map((imgObject, index) => makeItemLayout(imgObject, index));
 
-function makeItemLayout({preview, original, description}) {
+function makeItemLayout({preview, original, description}, index) {
     const itemRef = document.createElement('li');
     const linkRef = document.createElement('a');
     const imgRef = document.createElement('img');
@@ -15,8 +15,9 @@ function makeItemLayout({preview, original, description}) {
 
     linkRef.href = original;
     imgRef.src = preview;
-    imgRef.setAttribute('data-source', original);
     imgRef.alt = description;
+    imgRef.setAttribute('data-source', original);
+    imgRef.setAttribute('data-index', index);
 
     itemRef.appendChild(linkRef);
     linkRef.appendChild(imgRef);
