@@ -128,7 +128,7 @@ body {
   cursor: pointer;
   transition: background-color var(--animation-duration) var(--timing-function);
   outline: none;
-  background-image: url('../images/icon-close.svg');
+  background-image: url('/images/icon-close.svg');
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -169,12 +169,12 @@ body {
   top: 50%;
   transform: translateY(-50%);
   left: 10%;
-  background-image: url('../images/left-arrow.svg');
+  background-image: url('/images/left-arrow.svg');
 }
 
 .right-arrow {
   top: 50%;
   transform: translateY(-50%);
   right: 10%;
-  background-image: url('../images/right-arrow.svg');
+  background-image: url('/images/right-arrow.svg');
 }
