@@ -24,4 +24,3 @@ function makeItemLayout({preview, original, description}, index) {
     galleryList.appendChild(itemRef);
 }
 
-
